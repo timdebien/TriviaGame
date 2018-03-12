@@ -1,0 +1,42 @@
+.startbutton{
+    border-radius: 25px;
+    border: solid #83CCFF 2px;
+    margin: auto;
+    width: 400px;
+    height: 50px; 
+    margin-top: 20px;
+    text-align: center; 
+}
+
+
+
+.button{
+    border-radius: 25px;
+    border: solid #83CCFF 2px;
+    margin: auto;
+    width: 400px;
+    height: 50px; 
+    margin-top: 20px;
+    text-align: center;
+}
+.button:hover{
+    border-radius: 25px;
+    border: solid #83CCFF 2px;
+    
+    margin: auto;
+    background:grey;
+    
+    width: 400px;
+    height: 50px; 
+    margin-top: 20px;
+    text-align: center;
+}
+.question{
+    border-radius: 25px;
+    border: solid #83CCFF 2px;
+    text-align: center;
+    margin: auto;
+    width: 600px;
+    height: 80px;  
+    margin-top: 20px;
+}
