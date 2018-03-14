@@ -7,6 +7,7 @@ $(document).ready(function () {
   var wrong = 0;
   var none = 0;
   var questCount = 0;
+  var qCount = displayQuestion.length;
   //all questions answer and correct
   var allQuestions = [
     {
@@ -22,7 +23,7 @@ $(document).ready(function () {
     },
 
     {
-      question: "The stomach empties into the ?",
+      question: "The stomach empties into the?",
       answers: ["Jejunum", "Ileum", "Duodenum", "Transverse colon"],
       correctAns: "Duodenum"
     },
@@ -34,19 +35,19 @@ $(document).ready(function () {
     },
 
     {
-      question: "The anatomical name for the thumb is ?",
+      question: "The anatomical name for the thumb is?",
       answers: ["Hallux", "Pollex", "Phalanges ", "Thumpkin"],
       correctAns: "Pollex"
     },
 
     {
       question:  "All of the following are bones of the skull except:",
-      answers: ["Frontal", "Parietal", "Ischium", "Sphenoid",],
+      answers: ["Frontal", "Parietal", "Ischium", "Sphenoid"],
       correctAns: "Ischium"
     },
     
     {
-      question: "The largest internal organ of the body is the",
+      question: "The largest internal organ of the body is the?",
       answers: ["Liver", "Lungs", "Spleen", "Gallbladder"],
       correctAns: "Liver"
     },
@@ -85,6 +86,7 @@ $(document).ready(function () {
     //number hits zero...
     if (numberSecs === 0) {
       stop();
+      unAnswerd ++
        
       };
   };
@@ -98,38 +100,46 @@ $(document).ready(function () {
     correct++;
     questCount++;
     displayQuestion();
+    console.log(correct);
 
   }
   function wrongAnswer() {
     wrong++;
     questCount++;
-
     displayQuestion();
+    console.log(wrong);
   }
 
   function displayQuestion() {
+  function 
+
+   
     $(".question").text(allQuestions[questCount].question)
     $(".answer1").text(allQuestions[questCount].answers[0])
     $(".answer2").text(allQuestions[questCount].answers[1])
     $(".answer3").text(allQuestions[questCount].answers[2])
     $(".answer4").text(allQuestions[questCount].answers[3])
 
-    $(".button").on("click", function () {
-      if ($(this).text() === allQuestions[questCount].correctAns) {
-        correctAnswer();
-      }
-      else {
-        wrongAnswer();
-      }
-
-
-    })
+    $(".button").on("click", checkAnswer);
   }
-  $(".startbutton").text("click here to start")
+
+    
+  $(".startbutton").text("click here to start");
   $(".startbutton").on("click", function () {
     displayQuestion()
 
   });
 
+  function checkAnswer () {
+    if ($(this).text() === allQuestions[questCount].correctAns) {
+      correctAnswer();
+    }
+    else {
+      wrongAnswer();
+    }
+    $('.button').off('click', checkAnswer); // Turn click listener off for this set of questions
+    $(".button").on("click", checkAnswer);
+  }
+  
 
 });//end document ready
