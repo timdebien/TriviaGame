@@ -1,6 +1,6 @@
 $(document).ready(function () {
   //number of seconds on the timer
-  var numberSecs = 30;
+  var numberSecs =120;
   var intervalId;
   //questions and answers
   var correct = 0;
@@ -8,11 +8,12 @@ $(document).ready(function () {
   var none = 0;
   var questCount = 0;
   var qCount = displayQuestion.length;
+
   //all questions answer and correct
   var allQuestions = [
     {
       question: "What is the largest bone in the body?",
-      answers: ["Femur", "Ulina", "Radius", "Fibula"],
+      answers: ["Femur", "Ulna", "Radius", "Fibula"],
       correctAns: "Femur"
     },
     
@@ -100,19 +101,23 @@ $(document).ready(function () {
     correct++;
     questCount++;
     displayQuestion();
+   
+   
     console.log(correct);
 
   }
   function wrongAnswer() {
     wrong++;
     questCount++;
+   
+  
     displayQuestion();
     console.log(wrong);
   }
 
   function displayQuestion() {
-  function 
-
+  
+    
    
     $(".question").text(allQuestions[questCount].question)
     $(".answer1").text(allQuestions[questCount].answers[0])
@@ -123,7 +128,7 @@ $(document).ready(function () {
     $(".button").on("click", checkAnswer);
   }
 
-    
+  
   $(".startbutton").text("click here to start");
   $(".startbutton").on("click", function () {
     displayQuestion()

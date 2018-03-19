@@ -1,28 +1,84 @@
-.headline{
-    border: solid #83CCFF 2px;
-    margin: auto;
-    width: ;
-    height: 200px; 
-    margin-top: 20px;
-    background-color: black
+body{
+  background-image: url("skelly.jpg");
+  background-size: cover;
+  background-position: center;
+    
+    
+
+
 
 }
-.startbutton{
-    
-    border: solid #83CCFF 2px;
-    margin: auto;
-    width: 200px;
-    height: 50px; 
-    margin-top: 20px;
-    text-align: center; 
+
+
+
+.title{
+    text-align: center;
+    font-size: 100px;
+    color:  #f2f1e3;
+    opacity: 0.2;
+    font-family: 'Merriweather', serif;
+
+
 }
-#timer{
+
+.correct{
+    color:  #f2f1e3;
     border: solid #83CCFF 2px;
+    border-radius: 20px ;
+    font-size: 32px;
+    width: 50px;
+    opacity: 0.4;
+
+    
+    
+
+}
+.incorrect{
+    
+    color:  #f2f1e3;
+    border: solid #83CCFF 2px;
+    border-radius: 20px ;
+    font-size: 32px;
+    width: 1px;
+    opacity: 0.4;
+    
+
+}
+
+
+
+
+
+.startbutton{
+  background: ;
+    color:   #f2f1e3 ;
+    opacity: 0.4;
     margin: auto;
-    width: 200px;
-    height: 50px; 
     margin-top: 20px;
-    text-align: center; 
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Merriweather', serif;
+}
+
+
+
+
+#timer{
+   
+    /*border-radius: 25px;
+    border: solid #83CCFF 2px;*/
+    background: ;
+    color:   #f2f1e3 ;
+    opacity: 0.4;
+    margin: auto;
+
+    margin-top: 20px;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Merriweather', serif;
+   
+    
+  
 
 }
 
@@ -31,30 +87,42 @@
 .button{
     border-radius: 25px;
     border: solid #83CCFF 2px;
+    background: ;
+    color:   #f2f1e3 ;
+    opacity: 0.9;
     margin: auto;
-    width: 400px;
-    height: 50px; 
+    width: 555PX ;
+    height: 50px;
     margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
+    font-size: 32px;
+    
 }
 .button:hover{
     border-radius: 25px;
     border: solid #83CCFF 2px;
     margin: auto;
     background:grey;
-    width: 400px;
-    height: 50px; 
-    margin-top: 20px;
+    height: 50px;
+    width: 555PX;
+    margin-top: 32px;
     text-align: center;
+    font-size: 32px;
+  
 }
 .question{
     border-radius: 25px;
+    color:  #f2f1e3;
     border: solid #83CCFF 2px;
     text-align: center;
     margin: auto;
-    width: 600px;
-    height: 80px;  
+   
+    height: 50px;  
     margin-top: 20px;
+    font-size: 20px;
+ 
+    
 }
 #gameOver{
     position: absolute;
