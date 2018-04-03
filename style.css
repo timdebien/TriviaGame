@@ -40,12 +40,12 @@ body{
 
     color:  #f2f1e3;
     border: solid  #83CCFF  2px;
-   text-align:;
     border-radius: 20px ;
     font-size: 32px;
     width: 200px;
     height: 50px;
     opacity: 0.4;
+    float: right;
     
 
 }
@@ -70,18 +70,24 @@ body{
 }
 
 
+#tictoc {
+    margin: 0;
 
+}
 
-#timer{
+#timer {
    
     color:  #f2f1e3;
     border: solid  #83CCFF  2px;
-   text-align:;
+    margin: 0 auto;
     border-radius: 20px ;
     font-size: 32px;
     width: 200px;
     height: 50px;
     opacity: 0.4;
+    margin: 0 auto;
+    text-align: center;
+
    
     
   
@@ -90,7 +96,7 @@ body{
 
 
 
-.button{
+.button {
     border-radius: 25px;
     border: solid #83CCFF 2px;
     background: ;

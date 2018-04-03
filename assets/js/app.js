@@ -73,7 +73,8 @@ $(document).ready(function () {
 
 
   ]
-
+  
+ 
   
     function run() {
     clearInterval(intervalId)
@@ -83,7 +84,7 @@ $(document).ready(function () {
     //decrease number by one
     numberSecs--;
     //show number in #timer id
-     $("#timer").html("<h2>" + numberSecs + "</h2>")
+     $("#timer").html('<h2 id= "tictoc">' + numberSecs + "</h2>")
     //number hits zero...
     if (numberSecs === 0) {
       stop();
@@ -104,15 +105,18 @@ $(document).ready(function () {
    
    
     console.log(correct);
+    $('#right').text(' ' + correct);
 
   }
   function wrongAnswer() {
     wrong++;
     questCount++;
+ 
    
   
     displayQuestion();
     console.log(wrong);
+    $('#wrong').text(' ' + wrong);
   }
 
   function displayQuestion() {
